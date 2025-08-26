@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MercadoAmigo - Plantilla E-commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#/" class="brand">
+        <span id="brand-btn" contenteditable="true" class="brand-btn">
+         <span class="blue-text">Mercado</span><span class="yellow-text">Amigo</span>
+         </span>
+      </a>
+      <form class="search" id="searchForm">
+        <input id="searchInput" class="search__input" placeholder="Buscar productos, marcas y más..." aria-label="Buscar" />
+        <button class="search__btn" aria-label="Buscar">Buscar</button>
+      </form>
+      <nav class="nav">
+        <a href="#/cart" class="nav__cart" id="cartButton" aria-label="Carrito">
+          <span id="cartCount" class="badge">0</span>
+          🛒
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="app"></main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> MercadoAmigo — Plantilla para uso personal y profesional.</p>
+     
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
